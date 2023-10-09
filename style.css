@@ -1,0 +1,93 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(img/hátér.jpg);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/nav\ hatter.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px black;
+    margin-top: 0;
+}
+
+nav h1{
+    float: left;
+    text-shadow: 3px 3px 5px black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    float: left;
+    margin: 10px;
+    margin-top: 15px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 1.1rem;
+}
+
+section{
+    width: 75%;
+    margin-left: 12.5%;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+section article div{
+    width: 10%;
+}
+
+section article div h1{
+    animation: shake infinite ease-in-out 2s normal;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px black;
+    color: white;
+}
+
+@keyframes shake{
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(10deg);}
+    20% {transform: rotate(-10deg);}
+    30% {transform: rotate(5deg);}
+    40% {transform: rotate(-5deg);}
+    50% {transform: rotate(2.5deg);}
+    60% {transform: rotate(-2.5deg);}
+    70% {transform: rotate(1.25deg);}
+    80% {transform: rotate(-1.25deg);}
+    90% {transform: rotate(0.625deg);}
+    100% {transform: rotate(-0.625deg);}
+}
+
+section article p{
+    text-align: justify;
+    font-size: 1.3rem;
+    animation: skew infinite linear 1s alternate-reverse;
+}
+
+@keyframes skew{
+    from {transform: skew(7.5deg)}
+    to {transform: skew(-7.5deg)}
+}
