@@ -28,6 +28,166 @@ nav h1{
     font-weight: bold;
 }
 
+nav h1 span.rainbow1{
+    animation: rainbow1 1s infinite linear normal;
+}
+
+@keyframes rainbow1{
+    0% {color: red};
+    12.5% {color: orange;}
+    25% {color: yellow;}
+    37.5% {color: lightgreen;}
+    50% {color: aquamarine;}
+    62.5% {color: lightseagreen;}
+    75% {color: blue;}
+    87.5% {color: purple;}
+    100% {color: orangered;}
+}
+
+nav h1 span.rainbow2{
+    animation: rainbow2 1s infinite linear 1s normal;
+}
+
+@keyframes rainbow2{
+    0% {color: orangered};
+    12.5% {color: red;}
+    25% {color: orange;}
+    37.5% {color: yellow;}
+    50% {color: lightgreen;}
+    62.5% {color: aquamarine;}
+    75% {color: lightseagreen;}
+    87.5% {color: blue;}
+    100% {color: purple;}
+}
+
+nav h1 span.rainbow3{
+    animation: rainbow3 1s infinite linear 2s normal;
+}
+
+@keyframes rainbow3{
+    0% {color: purple};
+    12.5% {color: orangered;}
+    25% {color: red;}
+    37.5% {color: orange;}
+    50% {color: yellow;}
+    62.5% {color: lightgreen;}
+    75% {color: aquamarine;}
+    87.5% {color: lightseagreen;}
+    100% {color: blue;}
+}
+
+nav h1 span.rainbow4{
+    animation: rainbow4 1s infinite linear 3s normal;
+}
+
+@keyframes rainbow4{
+    0% {color: blue};
+    12.5% {color: purple;}
+    25% {color: orangered;}
+    37.5% {color: red;}
+    50% {color: orange;}
+    62.5% {color: yellow;}
+    75% {color: lightgreen;}
+    87.5% {color: aquamarine;}
+    100% {color: lightseagreen;}
+}
+
+nav h1 span.rainbow5{
+    animation: rainbow5 1s infinite linear 4s normal;
+}
+
+@keyframes rainbow5{
+    0% {color: lightseagreen};
+    12.5% {color: blue;}
+    25% {color: purple;}
+    37.5% {color: orangered;}
+    50% {color: red;}
+    62.5% {color: orange;}
+    75% {color: yellow;}
+    87.5% {color: lightgreen;}
+    100% {color: aquamarine;}
+}
+
+nav h1 span.rainbow6{
+    animation: rainbow6 1s infinite linear 5s normal;
+}
+
+@keyframes rainbow6{
+    0% {color: aquamarine};
+    12.5% {color: lightseagreen;}
+    25% {color: blue;}
+    37.5% {color: purple;}
+    50% {color: orangered;}
+    62.5% {color: red;}
+    75% {color: orange;}
+    87.5% {color: yellow;}
+    100% {color: lightgreen;}
+}
+
+nav h1 span.rainbow7{
+    animation: rainbow7 1s infinite linear 6s normal;
+}
+
+@keyframes rainbow7{
+    0% {color: lightgreen};
+    12.5% {color: aquamarine;}
+    25% {color: lightseagreen;}
+    37.5% {color: blue;}
+    50% {color: purple;}
+    62.5% {color: orangered;}
+    75% {color: red;}
+    87.5% {color: orange;}
+    100% {color: yellow;}
+}
+
+nav h1 span.rainbow8{
+    animation: rainbow8 1s infinite linear 7s normal;
+}
+
+@keyframes rainbow8{
+    0% {color: yellow};
+    12.5% {color: lightgreen;}
+    25% {color: aquamarine;}
+    37.5% {color: lightseagreen;}
+    50% {color: blue;}
+    62.5% {color: purple;}
+    75% {color: orangered;}
+    87.5% {color: red;}
+    100% {color: orange;}
+}
+
+nav h1 span.rainbow9{
+    animation: rainbow9 1s infinite linear 8s normal;
+}
+
+@keyframes rainbow9{
+    0% {color: orange};
+    12.5% {color: yellow;}
+    25% {color: lightgreen;}
+    37.5% {color: aquamarine;}
+    50% {color: lightseagreen;}
+    62.5% {color: blue;}
+    75% {color: purple;}
+    87.5% {color: orangered;}
+    100% {color: red;}
+}
+
+nav h1 span.rainbow10{
+    animation: rainbow10 1s infinite linear 9s normal;
+}
+
+@keyframes rainbow10{
+    0% {color: red};
+    12.5% {color: orange;}
+    25% {color: yellow;}
+    37.5% {color: lightgreen;}
+    50% {color: aquamarine;}
+    62.5% {color: lightseagreen;}
+    75% {color: blue;}
+    87.5% {color: purple;}
+    100% {color: orangered;}
+}
+
 nav ul{
     float: right;
 }
@@ -37,6 +197,28 @@ nav ul li{
     margin: 10px;
     margin-top: 15px;
     list-style: none;
+}
+
+nav ul li:hover{
+    animation: pop 1s infinite ease 0.2s alternate;
+}
+
+nav ul li:hover a{
+    color: yellow;
+}
+
+@keyframes pop{
+    0% {transform: scale(1.0227, 1.0227);}
+    10% {transform: scale(1.0454, 1.0454);}
+    20% {transform: scale(1.0681, 1.0681);}
+    30% {transform: scale(1.0908, 1.0908);}
+    40% {transform: scale(1.1135, 1.1135);}
+    50% {transform: scale(1.1362, 1.1362);}
+    60% {transform: scale(1.1589, 1.1589);}
+    70% {transform: scale(1.1816, 1.1816);}
+    80% {transform: scale(1.2043, 1.2043);}
+    90% {transform: scale(1.227, 1.227);}
+    100% {transform: scale(1.25, 1.25); }
 }
 
 nav ul li a{
@@ -59,12 +241,12 @@ section article div{
 }
 
 section article div h1{
-    animation: shake infinite ease-in-out 2s normal;
+    animation: shake 2s infinite ease-in-out normal;
     font-weight: bold;
     text-decoration: underline;
     font-size: 1.8rem;
-    text-shadow: 2px 2px 4px black;
-    color: white;
+    text-shadow: 2px 2px 14px black;
+    color: whitesmoke;
 }
 
 @keyframes shake{
@@ -84,10 +266,35 @@ section article div h1{
 section article p{
     text-align: justify;
     font-size: 1.3rem;
-    animation: skew infinite linear 1s alternate-reverse;
+    animation: skew 1s infinite linear alternate-reverse;
 }
 
 @keyframes skew{
     from {transform: skew(7.5deg)}
     to {transform: skew(-7.5deg)}
+}
+
+.banner{
+    width: 20%;
+    margin-left: 40%;
+    height: 382px;
+    background-image: url(img/logo.png);
+    background-size: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner:hover{
+    transform: rotateY(180deg);
+    transition-duration: 2s;
+    transition-delay: 0.2s;
+    transition-timing-function: ;
+}
+
+.banner h1{
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
 }
