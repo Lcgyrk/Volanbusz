@@ -6,10 +6,8 @@ A weboldal elosztása:
 - Általános információ
 > ebben általánosan bemutatom a város buszrendszerének a helyzetét
 - Banner
-> ez szimplán egy tábla Győr buszos cégéről, a Volánbuszról
-- Buszok
-> ez a rész arra szolgál, hogy az üzemben lévő buszokat bemutassam
-- Buszjáratok
-> itt Győr buszjáratai lesznek bemutatva két részben: helyi és helyközi
+> ez szimplán egy fikcionális logo a Volánbusz cégről 
+- Busz versenypálya
+> ez egy aranyos animáció, amiben a busz megy az úton oda-vissza
 - Jegyárak
 > ez a rész szimplán a jegyek, bérletek árát fogja ismertetni a kedves látogatóval
